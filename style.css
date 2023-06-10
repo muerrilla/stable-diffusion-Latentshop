@@ -1,0 +1,108 @@
+div#\#Latentshop .block{
+	border: 0!important;
+	margin: auto!important;
+}
+
+div#\#LatentshopTBar > div:not(:last-child) {
+	min-width: 40px;
+}
+div#\#LatentshopTBar > div:last-child {
+	min-width: 250px;
+}
+
+div#\#LatentshopTBar + div {
+	gap: 0;
+	margin-top: 0.6em;
+}
+
+div#\#LatentshopTBar + div > div:first-child {
+	row-gap: 0.5em;
+}
+
+.download.svelte-kt1jzh {
+	display: none!important;
+}
+
+div#LatentshopAdj {
+	padding: 8px 0px 0px 0px;
+}
+
+#z_color_swatch {
+	height: 100%;
+	padding: 55px 5px 10px 5px;
+}
+#z_color_swatch label {
+	display: block;
+	height: 100%;
+	overflow: hidden;
+}
+#z_color_swatch input[type="color"] {
+	width: 50%;
+	height: 90%;
+	border: none;
+	margin: auto;
+	background: transparent;
+}
+#z_color_swatch span {
+	left: 0;
+	text-align: center;
+	border: 0;
+}
+#LatentshopVis img {
+	object-fit: none;
+}
+#z_color_swatch input[type="color"]::-moz-color-swatch {
+  border: none;
+}
+
+#z_color_swatch input[type="color"]::-webkit-color-swatch-wrapper {
+  border-radius: 0;
+}
+
+#z_color_swatch input[type="color"]::-webkit-color-swatch {
+  border: none;
+}
+
+#PresetsTable {
+	margin-top: 2px;
+}
+
+/*#PresetsTable th , #PresetsTable td {
+	max-width: 24px;
+	min-width: 24px;
+    overflow: hidden;
+}*/
+
+#PresetsTable td {
+  padding: var(--size-1);
+}
+
+#PresetsTable tr td:not(:first-child),
+#PresetsTable tr th:not(:first-child) {
+	max-width: 24px;
+	min-width: 24px;
+  overflow: hidden;
+  font-size: var(--text-sm);  
+}
+
+#PresetsTable tr td:first-child,
+#PresetsTable tr th:first-child {
+	/*max-width: 48px;*/
+	min-width: 48px;
+  overflow: hidden;
+}
+
+#PresetsTable > div:first-child {
+	display: none;
+}
+
+#PresetsTable {
+	--table-even-background-fill: var(--neutral-800);
+	--table-odd-background-fill: var(--neutral-700);
+	--table-row-focus: var(--neutral-600);
+}
+
+#PresetsTable thead {
+	background: var(--neutral-800);
+}
+
