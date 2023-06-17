@@ -272,7 +272,9 @@ class Script(scripts.Script):
                 x[:, i, :, :] += self.grey_latent[:, i, :, :]
 
     def make_grey_latent(self, p, brightness, red, green, blue):
-        guide = torch.zeros(1,3,p.height,p.width,device=device).half()
+        guide = torch.zeros(1,3,p.height,p.width,device=device)
+        if not shared.cmd_opts.no_half:
+            guide.half()
         guide[:,0,:,:] += red
         guide[:,1,:,:] += green
         guide[:,2,:,:] += blue
